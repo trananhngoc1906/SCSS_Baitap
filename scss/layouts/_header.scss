@@ -1,0 +1,23 @@
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $pd-3;
+  .header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $color-black-2;
+    li {
+      display: inline;
+      font-size: $size-4;
+      padding-right: $pd-5;
+    }
+    li:nth-last-of-type() {
+      background-color: $color-pink;
+      display: inline-block;
+    }
+    a {
+      color: $color-black-2;
+    }
+  }
+}
