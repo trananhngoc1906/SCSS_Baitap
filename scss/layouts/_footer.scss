@@ -1,0 +1,204 @@
+footer {
+  background: url(./../../image/footer_background.jpg) no-repeat center;
+  background-size: cover;
+  color: $color-white;
+  min-height: 700px;
+  .footer__content {
+    max-width: 1500px;
+    margin: auto;
+    padding-top: 80px;
+    display: flex;
+    .footer__item {
+      width: 25%;
+      display: flex-start;
+      align-items: center;
+      flex-direction: column;
+      line-height: 50px;
+      font-size: $size-5;
+      i {
+        margin-right: $size-1;
+      }
+      h5 {
+        font-size: $size-10;
+        margin-bottom: 30px;
+      }
+      div a {
+        transition: all 0.5s ease;
+        color: $color-white;
+        &:hover {
+          color: $color-black-2;
+        }
+      }
+      li {
+        position: relative;
+      }
+      li a {
+        color: $color-white;
+        transition: all 0.5s ease;
+        &::after {
+          content: "";
+          width: 80px;
+          height: 1px;
+          background-color: rgba(255, 255, 255, 0.3);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+        &:hover {
+          color: rgba(255, 255, 255, 0.7);
+        }
+      }
+      .footer__item--input {
+        display: flex;
+        flex-direction: column;
+        input {
+          width: 70%;
+          outline: none;
+          text-align: center;
+          border-radius: 50px;
+          border: solid 2px rgba(255, 255, 255, 0.3);
+          background-color: transparent;
+          color: #fff;
+          padding: 15px 50px;
+          margin: 30px 0;
+          &:focus {
+            border-color: #fff;
+          }
+          &::placeholder {
+            color: #fff;
+          }
+        }
+        button {
+          cursor: pointer;
+          width: 70%;
+          font-size: 15px;
+          text-align: center;
+          border-radius: 50px;
+          border: solid 2px #fff;
+          background-color: $color-white;
+          padding: 15px 70px;
+          font-weight: 600;
+          &:hover {
+            background-color: transparent;
+            color: $color-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 350px) {
+  footer {
+    .footer__content {
+      padding-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      .footer__item {
+        width: 50%;
+        line-height: 30px;
+        font-size: 15px;
+        padding: 30px;
+        i {
+          margin-right: 10px;
+        }
+        h5 {
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+
+        .footer__item--input {
+          display: flex;
+          input {
+            width: 60%;
+            padding: 15px;
+            margin: 20px 0;
+          }
+          button {
+            width: 60%;
+            font-size: 15px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  footer {
+    .footer__content {
+      padding-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      .footer__item {
+        width: 50%;
+        line-height: 40px;
+        font-size: 20px;
+        padding: 30px;
+        i {
+          margin-right: 10px;
+        }
+        h5 {
+          font-size: 25px;
+          margin-bottom: 30px;
+        }
+        a,
+        p {
+          font-size: 15px;
+        }
+        .footer__item--input {
+          display: flex;
+          input {
+            width: 70%;
+            padding: 15px;
+            margin: 20px 0;
+          }
+          button {
+            width: 70%;
+            font-size: 15px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  footer {
+    .footer__content {
+      padding-top: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      .footer__item {
+        width: 25%;
+        line-height: 40px;
+        font-size: 20px;
+        padding: 30px;
+        i {
+          margin-right: 10px;
+        }
+        h5 {
+          font-size: 30px;
+          margin-bottom: 30px;
+        }
+        a,
+        p {
+          font-size: 18px;
+        }
+        .footer__item--input {
+          display: flex;
+          input {
+            width: 80%;
+            padding: 15px;
+            margin: 20px 0;
+          }
+          button {
+            width: 80%;
+            font-size: 15px;
+            padding: 15px;
+          }
+        }
+      }
+    }
+  }
+}

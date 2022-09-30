@@ -1,0 +1,378 @@
+.find {
+  background: url(./../../image/accent_bottom_wave_01.png) no-repeat bottom;
+  background-size: cover;
+  min-height: 800px;
+  margin-top: 80px;
+  .find__content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    .find__left {
+      width: 60%;
+      img {
+        width: 100%;
+      }
+    }
+
+    .find__right {
+      width: 40%;
+      .find__right--content {
+        min-height: 450px;
+        border-radius: 15px;
+        box-shadow: 0 30px 30px -10px rgb(0 0 0 / 30%);
+        padding: 20px;
+        background-color: white;
+        i {
+          color: $color-pink;
+          margin-left: 20px;
+        }
+        h1 {
+          font-size: $size-7;
+          margin: 20px 0 40px;
+        }
+
+        .find__right--info {
+          display: flex;
+          .find__right--name {
+            padding: 10px 0;
+            border-radius: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+            margin-right: 20px;
+            input {
+              border-color: transparent;
+              outline: none;
+              width: 100%;
+              padding-left: 10px;
+            }
+          }
+          .find__right--email {
+            padding: 10px 0;
+
+            border-radius: 50px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            overflow: hidden;
+            input {
+              border-color: transparent;
+              outline: none;
+              width: 100%;
+              padding-left: 10px;
+            }
+          }
+        }
+        .find__right--select {
+          padding: 10px 0;
+          outline: none;
+          border-radius: 50px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          margin: 15px 0;
+          select {
+            color: #757575;
+            border-color: transparent;
+            outline: none;
+            width: 85%;
+          }
+        }
+        .find__right--textarea {
+          display: flex;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 30px;
+          i {
+            margin-top: 15px;
+          }
+          textarea {
+            border-color: transparent;
+            border-bottom-right-radius: 30px;
+            border-top-right-radius: 30px;
+            outline: none;
+            display: block;
+            resize: vertical;
+            padding: 12px;
+            border-radius: 30px;
+            width: 100%;
+          }
+          span:last-child {
+            flex-grow: 1;
+          }
+        }
+        button {
+          background-color: $color-pink;
+          color: white;
+          border-radius: 50px;
+          border: solid 1px $color-pink;
+          padding: 15px 65px;
+          font-size: 15px;
+          margin: 50px 0;
+          font-weight: 600;
+          &:hover {
+            background-color: white;
+            color: $color-pink;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 350px) {
+  .find {
+    .find__content {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      .find__left {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .find__right {
+        width: 100%;
+        .find__right--content {
+          min-height: 450px;
+          margin: 20px;
+          i {
+            margin-left: 20px;
+          }
+          h1 {
+            font-size: $size-7;
+            margin: 20px 0 40px;
+          }
+
+          .find__right--info {
+            display: flex;
+            flex-wrap: wrap;
+            .find__right--name {
+              width: 100%;
+              padding: 10px 0;
+              display: flex;
+              overflow: hidden;
+              margin-right: 0;
+              input {
+                width: 100%;
+                padding-left: 10px;
+              }
+            }
+            .find__right--email {
+              width: 100%;
+              padding: 10px 0;
+              display: flex;
+              margin-top: 20px;
+              input {
+                width: 100%;
+                padding-left: 10px;
+              }
+            }
+          }
+          .find__right--select {
+            padding: 10px 0;
+            margin: 15px 0;
+            select {
+              color: #757575;
+              width: 85%;
+            }
+          }
+          .find__right--textarea {
+            display: flex;
+            border-radius: 30px;
+            i {
+              margin-top: 15px;
+            }
+            textarea {
+              display: block;
+              padding: 12px;
+              width: 100%;
+            }
+          }
+          button {
+            background-color: $color-pink;
+            color: white;
+            border-radius: 50px;
+            border: solid 1px $color-pink;
+            padding: 15px 65px;
+            font-size: 15px;
+            margin-top: 50px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 768px) {
+  .find {
+    .find__content {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      .find__left {
+        text-align: center;
+        width: 100%;
+        img {
+          width: 60%;
+        }
+      }
+
+      .find__right {
+        width: 100%;
+        .find__right--content {
+          min-height: 450px;
+          margin: 20px;
+          i {
+            margin-left: 20px;
+          }
+          h1 {
+            font-size: $size-7;
+            margin: 20px 0 40px;
+          }
+
+          .find__right--info {
+            display: flex;
+            flex-wrap: nowrap;
+            .find__right--name {
+              width: 50%;
+              padding: 10px 0;
+              display: flex;
+
+              margin-right: 20px;
+              input {
+                width: 100%;
+                padding-left: 10px;
+              }
+            }
+            .find__right--email {
+              width: 50%;
+              padding: 10px 0;
+              display: flex;
+              margin-top: 0;
+              input {
+                width: 100%;
+                padding-left: 10px;
+              }
+            }
+          }
+          .find__right--select {
+            padding: 10px 0;
+            margin: 15px 0;
+            select {
+              color: #757575;
+              width: 85%;
+            }
+          }
+          .find__right--textarea {
+            display: flex;
+            border-radius: 30px;
+            i {
+              margin-top: 15px;
+            }
+            textarea {
+              display: block;
+              padding: 12px;
+              width: 100%;
+            }
+          }
+          button {
+            background-color: $color-pink;
+            color: white;
+            border-radius: 50px;
+            border: solid 1px $color-pink;
+            padding: 15px 65px;
+            font-size: 15px;
+            margin-top: 50px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(min-width: 992px) {
+  .find {
+    .find__content {
+      margin: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      .find__left {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+
+      .find__right {
+        width: 100%;
+        .find__right--content {
+          min-height: 450px;
+          margin: 20px;
+          i {
+            margin-left: 20px;
+          }
+          h1 {
+            font-size: $size-7;
+            margin: 20px 0 40px;
+          }
+
+          .find__right--info {
+            display: flex;
+            flex-wrap: nowrap;
+            .find__right--name {
+              width: 50%;
+              padding: 10px 0;
+              display: flex;
+
+              margin-right: 20px;
+              input {
+                width: 100%;
+                padding-left: 10px;
+              }
+            }
+            .find__right--email {
+              width: 50%;
+              padding: 10px 0;
+              display: flex;
+              margin-top: 0;
+              input {
+                width: 100%;
+                padding-left: 10px;
+              }
+            }
+          }
+          .find__right--select {
+            padding: 10px 0;
+            margin: 15px 0;
+            select {
+              color: #757575;
+              width: 85%;
+            }
+          }
+          .find__right--textarea {
+            display: flex;
+            border-radius: 30px;
+            i {
+              margin-top: 15px;
+            }
+            textarea {
+              display: block;
+              padding: 12px;
+              width: 100%;
+            }
+          }
+          button {
+            background-color: $color-pink;
+            color: white;
+            border-radius: 50px;
+            border: solid 1px $color-pink;
+            padding: 15px 65px;
+            font-size: 15px;
+            margin-top: 50px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

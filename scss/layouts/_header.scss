@@ -1,23 +1,219 @@
-.header__content {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 $pd-3;
-  .header__right {
+header {
+  .header__content {
+    position: absolute;
+    left: 0;
+    right: 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    color: $color-black-2;
-    li {
-      display: inline;
-      font-size: $size-4;
-      padding-right: $pd-5;
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 0 30px;
+    &-small {
+      color: white;
     }
-    li:nth-last-of-type() {
-      background-color: $color-pink;
-      display: inline-block;
+
+    .header__left {
+      img {
+        width: 100px;
+      }
     }
-    a {
-      color: $color-black-2;
+    .header__right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        display: inline;
+        font-size: $size-4;
+        font-weight: 600;
+        padding-right: $pmd-7;
+      }
+      li a {
+        color: $color-black-2;
+        &:hover {
+          color: $color-pink;
+        }
+      }
+
+      .header__right--contact {
+        display: flex;
+        align-items: center;
+        div a {
+          background-color: $color-pink;
+          color: $color-white;
+          padding: $pmd-0 $pmd-2;
+          border-radius: $size-8;
+          font-size: $size-4;
+          font-weight: 600;
+          border: solid 2px $color-pink;
+          margin: $pmd-1;
+          &:hover {
+            color: $color-pink;
+            background-color: $color-white;
+            border-color: $color-pink;
+          }
+        }
+
+        a {
+          color: $color-black-2;
+          margin-left: 10px;
+          font-size: $size-5;
+          &:hover {
+            color: $color-pink;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 350px) {
+  header {
+    .header__content {
+      padding: 10px;
+      .header__left {
+        img {
+          width: 50px;
+        }
+      }
+      .header__right {
+        li {
+          font-size: 10px;
+          padding-right: 2px;
+        }
+        .header__right--contact {
+          div a {
+            display: block;
+            padding: 2px;
+            font-size: 8px;
+          }
+          a {
+            margin-left: 5px;
+            font-size: $size-1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  header {
+    .header__content {
+      padding: 10px;
+      .header__left {
+        img {
+          width: 80px;
+        }
+      }
+      .header__right {
+        li {
+          font-size: 15px;
+          padding-right: 4px;
+        }
+        .header__right--contact {
+          div a {
+            display: block;
+            padding: 10px;
+            font-size: 13px;
+          }
+          a {
+            margin-left: 5px;
+            font-size: $size-2;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    .header__content {
+      padding: 10px;
+      .header__left {
+        img {
+          width: 80px;
+        }
+      }
+      .header__right {
+        li {
+          font-size: 17px;
+          padding-right: 10px;
+        }
+        .header__right--contact {
+          div a {
+            display: block;
+            padding: 10px;
+            font-size: 15px;
+          }
+          a {
+            margin-left: 5px;
+            font-size: $size-3;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  header {
+    .header__content {
+      padding: 10px;
+      .header__left {
+        img {
+          width: 110px;
+        }
+      }
+      .header__right {
+        li {
+          font-size: 18px;
+          padding-right: 15px;
+        }
+        .header__right--contact {
+          div a {
+            display: block;
+            padding: 15px;
+            font-size: 15px;
+            margin: 0;
+          }
+          a {
+            margin-left: 10px;
+            font-size: $size-4;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    .header__content {
+      padding: 10px;
+      .header__left {
+        img {
+          width: 130px;
+        }
+      }
+      .header__right {
+        li {
+          font-size: 20px;
+          padding-right: 25px;
+        }
+        .header__right--contact {
+          div a {
+            display: block;
+            padding: 15px;
+            font-size: 20px;
+            margin: 0;
+          }
+          a {
+            margin-left: 10px;
+            font-size: $size-5;
+          }
+        }
+      }
     }
   }
 }

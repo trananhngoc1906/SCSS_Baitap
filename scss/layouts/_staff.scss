@@ -1,8 +1,197 @@
 .staff {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  background: #dcd1f0 url(./../../image/Wave_White_bottom_right_shape_01.png)
+    no-repeat bottom right;
+  background-size: 100%;
+
+  .staff__content {
+    max-width: 1500px;
+    margin: auto;
+    .staff__top,
+    .staff__bot {
+      display: flex;
+      .staff__item {
+        width: 25%;
+        padding: 0 $pmd-1;
+        .staff__item--content {
+          min-height: 360px;
+          border-radius: $size-3;
+          overflow: hidden;
+          background-color: $color-white;
+          transition: all 0.8s ease;
+          &:hover {
+            box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
+          }
+          .staff__item--top {
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              transition: all 0.8s ease;
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
+          }
+
+          .staff__item--bot {
+            .staff__item--bot--content {
+              padding: 0 $pmd-3;
+              text-align: center;
+              p {
+                color: $color-pink;
+                font-size: $size-2;
+                font-weight: 600;
+                padding-top: 28px;
+              }
+              h3 {
+                font-size: $size-10;
+                color: $color-black-1;
+                margin: 15px 0;
+              }
+              h5 {
+                font-size: 18px;
+                color: $color-black-2;
+                font-weight: 400;
+                line-height: 30px;
+                padding-bottom: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .staff__bot {
+      margin-top: 40px;
+    }
+  }
 }
 
-.staff__item--top img {
+@media screen and (min-width: 350px) {
+  .staff {
+    .staff__content {
+      .staff__top,
+      .staff__bot {
+        display: flex;
+        flex-wrap: wrap;
+        .staff__item {
+          width: 100%;
+          margin: auto;
+          padding: 20px 30px;
+          .staff__item--content {
+            min-height: 360px;
+            .staff__item--bot {
+              .staff__item--bot--content {
+                padding: 0 20px;
+
+                p {
+                  font-size: 15px;
+
+                  padding-top: 28px;
+                }
+                h3 {
+                  font-size: 30px;
+
+                  margin: 15px 0;
+                }
+                h5 {
+                  font-size: 18px;
+
+                  line-height: 30px;
+                  padding-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+        .staff__bot {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .staff {
+    .staff__content {
+      .staff__top,
+      .staff__bot {
+        display: flex;
+        flex-wrap: wrap;
+        .staff__item {
+          width: 50%;
+          margin: auto;
+          padding: 20px 30px;
+          .staff__item--content {
+            .staff__item--bot {
+              .staff__item--bot--content {
+                padding: 0 20px;
+
+                p {
+                  font-size: 15px;
+
+                  padding-top: 28px;
+                }
+                h3 {
+                  font-size: 30px;
+                  margin: 15px 0;
+                }
+                h5 {
+                  font-size: 18px;
+
+                  line-height: 30px;
+                  padding-bottom: 30px;
+                }
+              }
+            }
+          }
+        }
+        .staff__bot {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .staff {
+    .staff__content {
+      .staff__top,
+      .staff__bot {
+        display: flex;
+        flex-wrap: wrap;
+        .staff__item {
+          min-height: 360px;
+          width: 25%;
+          margin: auto;
+          padding: 20px 30px;
+          .staff__item--content {
+            .staff__item--bot {
+              .staff__item--bot--content {
+                padding: 0 20px;
+
+                p {
+                  font-size: 12px;
+
+                  padding-top: 28px;
+                }
+                h3 {
+                  font-size: 20px;
+                  margin: 15px 0;
+                }
+                h5 {
+                  font-size: 16px;
+
+                  line-height: 30px;
+                  padding-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+        .staff__bot {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
