@@ -21,11 +21,13 @@ header .header__content {
   position: absolute;
   left: 0;
   right: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1500px;
   padding: 0 30px;
+  transition: all 0.8s ease;
 }
 header .header__content-small {
   color: white;
@@ -171,13 +173,13 @@ header .header__content .header__right .header__right--contact a:hover {
     width: 130px;
   }
   header .header__content .header__right li {
-    font-size: 20px;
+    font-size: 18px;
     padding-right: 25px;
   }
   header .header__content .header__right .header__right--contact div a {
     display: block;
-    padding: 15px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
     margin: 0;
   }
   header .header__content .header__right .header__right--contact a {
@@ -572,6 +574,7 @@ header .header__content .header__right .header__right--contact a:hover {
   flex-grow: 1;
 }
 .find .find__content .find__right .find__right--content button {
+  cursor: pointer;
   background-color: #b61984;
   color: white;
   border-radius: 50px;

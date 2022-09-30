@@ -3,11 +3,13 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1500px;
     padding: 0 30px;
+    transition: all 0.8s ease;
     &-small {
       color: white;
     }
@@ -198,14 +200,14 @@ header {
       }
       .header__right {
         li {
-          font-size: 20px;
+          font-size: 18px;
           padding-right: 25px;
         }
         .header__right--contact {
           div a {
             display: block;
-            padding: 15px;
-            font-size: 20px;
+            padding: 10px;
+            font-size: 15px;
             margin: 0;
           }
           a {
